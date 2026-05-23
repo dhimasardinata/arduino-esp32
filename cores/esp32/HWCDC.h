@@ -1,4 +1,4 @@
-// Copyright 2015-2024 Espressif Systems (Shanghai) PTE LTD
+// Copyright 2015-2026 Espressif Systems (Shanghai) PTE LTD
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
 // you may not use this file except in compliance with the License.
@@ -103,6 +103,7 @@ public:
   }
   operator bool() const;
   void setDebugOutput(bool);
+  void updateBaudRate(unsigned long baud) {}
   uint32_t baudRate() {
     return 115200;
   }
